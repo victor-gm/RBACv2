@@ -1,0 +1,4 @@
+#!/bin/bash
+
+email=`sed -n '4p' < /etc/rbac/network.conf`
+echo -e $1 | ssmtp $email
